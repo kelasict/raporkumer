@@ -1,0 +1,14 @@
+
+<script>
+/* Pemuat: isi aplikasi dikirim sebagai teks base64 agar tidak diubah oleh Apps Script, lalu dijalankan di sini. */
+(function () {
+  try {
+    var bin = atob(document.getElementById('appsrc').textContent.replace(/\s+/g, ''));
+    var u8 = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i);
+    window.__appCode = new TextDecoder('utf-8').decode(u8);
+    var el = document.createElement('script'); el.text = window.__appCode; document.body.appendChild(el);
+  } catch (e) { var t = 'Pemuat: ' + (e && e.message || e); try { if (/SyntaxError/.test(String(e)) && !window.__located) { window.__located = true; t += ' ## ' + __locate(window.__appCode || ''); } } catch (x) { } window.__errs.push(t); __bootMsg('Galat pemuat: ' + window.__errs.join(' | ')); }
+})();
+</script>
+</body>
+</html>
