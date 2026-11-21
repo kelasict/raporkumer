@@ -10,7 +10,7 @@
     "https://www.googleapis.com/auth/userinfo.email"
   ],
   "webapp": {
-    "executeAs": "USER_DEPLOYING",
+    "executeAs": "https://script.google.com/a/macros/guru.smp.belajar.id/s/AKfycbyFdL3O7pB8ZWrzMyazcpU3Yy5QLZa3M3lY17MsWd7RXnE7Zy6jQypNmzDxbfqFN91SDg/exec",
     "access": "ANYONE_ANONYMOUS"
   }
 }
