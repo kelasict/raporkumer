@@ -45,7 +45,7 @@ function getAssignments() {
       });
       var denom = ang.length * tps.length;
       return {
-        id_mapel_kelas: mk.id_mapel_kelas, id_kelas: k.id_kelas, nama_kelas: k.nama_kelas, fase: k.fase, id_mapel: m.id_mapel, nama_mapel: m.nama_mapel,
+        id_mapel_kelas: mk.id_mapel_kelas, id_kelas: k.id_kelas, nama_kelas: k.nama_kelas, fase: k.fase, tingkat: k.tingkat, id_mapel: m.id_mapel, nama_mapel: m.nama_mapel,
         jumlah_siswa: ang.length, jumlah_tp: tps.length,
         progress_tp: denom ? Math.round(filled * 100 / denom) : 0, capaian: cap, rapor_terisi: rapor, final: fin
       };
